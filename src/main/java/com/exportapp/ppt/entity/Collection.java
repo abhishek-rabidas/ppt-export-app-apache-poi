@@ -12,6 +12,7 @@ import javax.persistence.Id;
 @Getter
 @Setter
 public class Collection extends AbstractPersistable<Long> {
+    private String collectionName;
     private String styleNo;
     private String description;
     private String comp;
