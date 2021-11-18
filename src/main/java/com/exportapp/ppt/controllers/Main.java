@@ -48,8 +48,6 @@ public class Main {
 
     @PostMapping("/v1")
     public void pptImport(@RequestParam("file") MultipartFile file, @RequestPart("json_body") PPTImportBody pptImportBody){
-        System.out.println(pptImportBody.getPatterns().length);
-        System.out.println(pptImportBody.getCollectionId());
         helper.pptImport(file, pptImportBody);
     }
 }
